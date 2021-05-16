@@ -90,23 +90,6 @@
 
         </LinearLayout>
 
-        <EditText
-            android:id="@+id/searchBar"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginLeft="18dp"
-            android:paddingLeft="12dp"
-            android:drawablePadding="12dp"
-            android:background="@drawable/button_radius"
-            android:drawableLeft="@drawable/ic_baseline_search_24"
-            android:hint="Search"
-            app:backgroundTint="#eceeee"
-            android:queryHint="Search"
-            android:layout_marginRight="18dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
-
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerVi"
             android:layout_width="match_parent"
@@ -114,7 +97,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/searchBar"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
             tools:listitem="@layout/message_list_item" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

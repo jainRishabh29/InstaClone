@@ -27,7 +27,7 @@ class SecondFragment : Fragment() {
         }
         val data = DmDataSource.createDataSet()
         messageAdapter.submitList(data)
-       // view.findViewById<ImageView>(R.id.backArrow).setOnClickListener { Navigation.findNavController(view).navigate(R.id.action_secondFragment_to_firstFragment) }
+     //    view.findViewById<ImageView>(R.id.backArrow).setOnClickListener { Navigation.findNavController(view).navigate(R.id.action_secondFragment_to_firstFragment) }
         return view
     }
 

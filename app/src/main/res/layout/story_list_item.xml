@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/instastorygrad"
+            app:shapeAppearanceOverlay="@style/circleImageView"
+            tools:layout_editor_absoluteX="173dp"
+            tools:layout_editor_absoluteY="317dp" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/story_image"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:scaleType="centerCrop"
+            android:layout_centerInParent="true"
+            android:src="@color/teal_700"
+            app:shapeAppearanceOverlay="@style/circleImageView"
+            tools:layout_editor_absoluteX="173dp"
+            tools:layout_editor_absoluteY="317dp" />
+
+
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
