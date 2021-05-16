@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.EditText
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 
@@ -36,8 +37,10 @@ class StoryRecyclerAdapter : RecyclerView.Adapter<StoryRecyclerAdapter.StoryView
 
     class StoryViewHolder constructor(itemView: View):RecyclerView.ViewHolder(itemView){
         val story_view : com.google.android.material.imageview.ShapeableImageView = itemView.findViewById(R.id.story_image)
+        val story_name : TextView = itemView.findViewById(R.id.story_name)
 
         fun bind(story: Story){
+            story_name.setText(story.story_name)
             Glide.with(itemView.context).load(story.story_image).into(story_view)
         }
     }
